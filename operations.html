@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erovoutika Gallery</title>
+    <title>Operations</title>
     <style>
         /* Basic styling for the menu */
         body {
@@ -68,11 +68,32 @@
         .about-us:hover {
             background-color: #ffcc80; /* Lighter shade of orange on hover */
         }
+
+        /* Styling for the gallery */
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery-item {
+            margin: 10px;
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 200px; /* Set width of the thumbnail */
+            border: 2px solid white; /* Add border to the image */
+            border-radius: 5px; /* Add border-radius to create rounded corners */
+            transition: transform 0.3s ease; /* Add smooth transition for scaling */
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1); /* Scale the image on hover */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Erovoutika Gallery</h1>
+        <h1>Operations</h1>
         <nav>
             <ul>
                 <li><a href="home.1.html">Home</a></li>
@@ -84,9 +105,36 @@
         </nav>
     </header>
 
-    <!-- About Us Button in Footer -->
+    <!-- Gallery Section -->
+    <div class="gallery-container">
+        <!-- Add more images here -->
+        <div class="gallery-item" onclick="openImage('gallery/sample.jpg')">
+            <img src="gallery/sample.jpg" alt="Sample Image">
+        </div>
+        <div class="gallery-item" onclick="openImage('gallery/sample.jpg')">
+            <img src="gallery/sample.jpg" alt="Sample Image">
+        </div>
+        <div class="gallery-item" onclick="openImage('gallery/sample.jpg')">
+            <img src="gallery/sample.jpg" alt="Sample Image">
+        </div>
+        <div class="gallery-item" onclick="openImage('gallery/sample.jpg')">
+            <img src="gallery/sample.jpg" alt="Sample Image">
+        </div>
+        <div class="gallery-item" onclick="openImage('gallery/sample.jpg')">
+            <img src="gallery/sample.jpg" alt="Sample Image">
+        </div>
+    </div>
+
     <footer>
+        <!-- About Us Button in Footer -->
         <a href="#" class="about-us">About Us</a>
     </footer>
+
+    <!-- JavaScript to open images in full size -->
+    <script>
+        function openImage(imageUrl) {
+            window.open(imageUrl);
+        }
+    </script>
 </body>
 </html>
