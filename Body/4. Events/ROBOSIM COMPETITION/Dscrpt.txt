@@ -1,0 +1,1 @@
+In a ROBOSIM competition, participants often design and program virtual robots, which are then tested within the simulated environment. This allows participants to experiment, refine their algorithms, and test their robots' capabilities without the need for physical hardware.

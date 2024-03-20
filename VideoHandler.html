@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <style>
+        /* Basic styling for the menu */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00008b; /* Changing background color to navy blue */
+        }
+        header {
+            background-color: #00008b; /* Changing background color to navy blue */
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+            flex: 1;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: inline; /* Making the buttons occupy the same line */
+        }
+        nav ul li {
+            display: inline; /* Making the buttons occupy the same line */
+            margin-right: 10px; /* Add some space between buttons */
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: inline-block; /* Making the buttons occupy the same line */
+            background-color: #FFA500; /* Changing background color of buttons to orange */
+        }
+        nav ul li a:hover {
+            background-color: #ffcc80; /* Lighter shade of orange on hover */
+        }
+        
+        /* Styling for the footer */
+        footer {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .about-us {
+            background-color: #FFA500; /* Orange background color */
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px; /* Rounded corners to create hotdog shape */
+            text-decoration: none;
+        }
+        .about-us:hover {
+            background-color: #ffcc80; /* Lighter shade of orange on hover */
+        }
+
+        /* Styling for the video container */
+        .video-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .video-item {
+            margin: 10px;
+            cursor: pointer;
+        }
+        .video-item video {
+            width: 320px; /* Set width of the video */
+            border: 2px solid white; /* Add border to the video */
+            border-radius: 5px; /* Add border-radius to create rounded corners */
+            transition: transform 0.3s ease; /* Add smooth transition for scaling */
+        }
+        .video-item video:hover {
+            transform: scale(1.1); /* Scale the video on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sample Name</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
+                <li><a href="operations.html">Operations</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="videos.html">Videos</a></li> <!-- Link to the videos page -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <!-- Add more videos here -->
+        <div class="video-item" onclick="openVideo('gallery/samplevideo.mp4')">
+            <video controls>
+                <source src="gallery/samplevideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <footer>
+        <!-- About Us Button in Footer -->
+        <a href="#" class="about-us">About Us</a>
+    </footer>
+
+    <!-- JavaScript to open videos in full size -->
+    <script>
+        function openVideo(videoUrl) {
+            window.open(videoUrl);
+        }
+    </script>
+</body>
+</html>

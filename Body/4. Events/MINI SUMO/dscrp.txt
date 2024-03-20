@@ -1,0 +1,1 @@
+Similar to Mega Sumo, Mini Sumo robots must be within the 0.5kg weight limit and in the size limit of 100 x 100mm. The battle ring has a diameter or 800mm made of non magnetic material. The robot must be fully autonomous and be able to start and stop on command from the referee via star/stop module (see appendix in the regulations).
