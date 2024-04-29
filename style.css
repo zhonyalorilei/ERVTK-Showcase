@@ -516,3 +516,123 @@ input [type="radio"]:checked {
     transform: translate3d(-40%, 0, -250px);
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
+.overview {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+
+}
+.overview h1 {
+    font-size: 36px;
+    font-weight: 600;
+    
+}
+.overview p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 0px;
+    width: 70%;
+    margin-left: 20%;
+
+}
+.video-container {
+    overflow-x: auto;
+    scrollbar-width: none;
+
+}
+.video-container .vd-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    grid-template-columns: repeat(10, 1fr);
+    cursor: pointer;
+    margin-bottom: 30px;
+     
+}
+
+.video-item video {
+    width: 200px; /* Set width of the video */
+    border: 2px solid white; /* Add border to the video */
+    transition: transform 0.3s ease; /* Add smooth transition for scaling */
+    border-radius: 20px;
+}
+.video-item video:hover {
+    box-shadow: 0px 0px 20px #ffa500;
+    border-radius: 20px;
+    transition: .3s;
+}
+.video-container .vd-list::-webkit-scrollbar {
+    display: none;
+    
+}
+.video-container .slider-scrollbar {
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.vd-list .slide-button {
+    position: absolute;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-top: 10%;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #8888879f;
+    cursor: pointer;
+    border-radius: 50%;
+    font-family: monospace;
+    font-weight: bold;
+    
+}
+.vd-list button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.vd-list .slide-button#prev-slide {
+    left: -20px;
+}
+.vd-list .slide-button#next-slide {
+    right: -20px;
+}
+
+.slider-scrollbar .scrollbar-btn {
+    height: 2px;
+    width: 100%;
+    background: #bfbfc7;
+    border-radius: 4px;
+
+}
+.slider-scrollbar:hover .scrollbar-btn {
+    height: 4px;
+}
+
+.slider-scrollbar .scroller {
+    position: absolute;
+    height: 3px;
+    width: 50%;
+    background: #01d425f6;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider-scrollbar:hover .scroller:active {
+    cursor: grab;
+    height: 8px;
+    top: -2px;
+
+}
+.slider-scrollbar .scroller::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+
+}
