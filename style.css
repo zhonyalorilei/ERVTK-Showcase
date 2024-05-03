@@ -413,8 +413,9 @@ header a:hover {
     left: 0;
 }
 .training-content {
-    width: 80%;
+    max-width: 100%;
     margin: auto;
+    max-height: 200px;
     text-align: center;
     padding-top: 50px;
 }
@@ -423,17 +424,19 @@ h1 {
     font-weight: 600;
 }
 p {
+    display: flex;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
     line-height: 1px;
     padding: 1px;
+    justify-content: space-between;
 }
 #slider {
     position: relative;
     width: 60%;
     height: 70vh;
-    margin: 100px auto;
+    margin: 20px auto;
     transform-style: preserve-3d;
     font-family: 'Courier New', Courier, monospace;
     perspective: 2400px;
@@ -445,6 +448,7 @@ input[type="radio"] {
     left: 15%;
     width: 18px;
     height: 18px;
+    justify-content: center;
     margin: 0 15px 0 0;
     transform: translateX(-83px);
     cursor: pointer;
@@ -517,10 +521,11 @@ input [type="radio"]:checked {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 .overview {
+    
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 50px;
+    
 
 }
 .overview h1 {
@@ -529,13 +534,15 @@ input [type="radio"]:checked {
     
 }
 .overview p {
+    display: flex;
     color: #fff;
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding: 0px;
-    width: 70%;
-    margin-left: 20%;
+    width: 100%;
+    justify-content: space-between;
+    margin: auto;
+  
 
 }
 
@@ -664,4 +671,43 @@ input [type="radio"]:checked {
     right: 0;
     top: -10px;
     bottom: -10px;
+}
+@media (max-width: 1023px) {
+    .slider-wrapper .slide-button {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 50%;
+    }
+
+    .slider-wrapper .image-list {
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .slider-wrapper .image-list .video-item {
+        width: 280px;
+        height: 380px;
+    }
+    .slider-scrollbar .scrollbar-thumb {
+        width: 20%;
+    }
+    .overview .p{
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    .training-content h1 {
+        position: relative;
+        margin-top: 0;
+    }
+    #slider {
+        height: 40vh;
+        margin-top: 0;
+    }
+    input[type="radio"] {
+        transform: translateX(-27px);
+        justify-content: center;
+        
+    }
+
 }
