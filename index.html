@@ -11,20 +11,23 @@
 <body>
     <header>
         
-        <nav class="nav">
-            <a href="#">
+        <nav class="nav" id="home-content">
+            <div>
+           
                 <img src="image/ero.webp" alt="" class="logo">
-            </a>
-            <a href="index.html">Home</a>
-            <a href="#training-content">Trainings</a>
+            </div>
+        <ul>
+            <a href="#home-content">Home</a>
+            <a href="#training-pictures">Trainings</a>
             <a href="events.html">Events</a>
             <a href="offers.html">Offers</a>
             <a href="achievements.html">Achievements</a>
+        </ul>
         </nav>
     </header>
 
     <!-- carousel -->
-    <div class="carousel">
+    <div class="carousel" >
         <!-- list item -->
         <div class="list">
             <div class="item">
@@ -252,9 +255,7 @@
         <div class="item">
             <img src="image/6.jpg">
             <div class="layers"><h3>DATA ANALYTICS PASSER </h3></div>
-    
-                
-                
+         
            
         </div>
 
@@ -296,11 +297,17 @@
     <script src="app.js"></script>
 
     <section class="overview">
+        <div class="content reveal">
+        <div class="card">
         <h1>EROVOUTIKA</h1>
         <P>A respected and experienced Automation and Robotics Company. Our highly professional teams, with in-depth knowledge of each jurisdiction, has been successfully deliver customer needs. <section class="training-content" id="training-content">
-       
+        </div>
+        </div>
     </section>
-    <div class="video-container">
+    <section class="overview">
+        <div class="content reveal">
+        <div class="card">
+    <div class="video-container" id="reels">
         <!-- Add more videos here -->
     <div class="slider-wrapper">
         <div class="image-list">
@@ -365,11 +372,16 @@
         </div>
     </div>
     </div>
+</div>
+</div>
+    
+</section>
 
-    <section class="training-content" id="training-content">
-        <h1>TRAININGS</h1>
-
-        </P>
+    <section class="training-content" id="training-pictures">
+        <div class="content reveal">
+        <div class="card">
+                <h1>TRAININGS</h1>
+        
         <div id="slider">
             
             <input type="radio" name="slider" id="s1" checked />
@@ -384,6 +396,9 @@
             <label for="s4" id="slide4"><img src="image/Trainings 1st Set (5).jpg" alt=""></label>
             <label for="s5" id="slide5"><img src="image/Trainings 1st Set (6).jpg" alt=""></label>
         </div>
+    </div>
+</div>
     </section>
+    <script src="scripts.js"></script>
 </body>
 </html>

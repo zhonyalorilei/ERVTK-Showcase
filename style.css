@@ -9,11 +9,22 @@ body{
 a{
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+}
 .nav {
     display: flex;
     background: linear-gradient(60deg, #00008b,#ffa500);
     justify-content: space-between;
-    padding: 1% 36% 1% 10%;
+    padding: 0% 8% 0% 9%;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+}
+nav ul {
+    display: flex;
+    justify-content: end;
     align-items: center;
     text-decoration: none;
     list-style: none;
@@ -22,9 +33,8 @@ a{
 header{
     width: 150%;
     max-width: 100vw;
-    height: 50px;
     align-items: center;
-    position: relative;
+    position: sticky;
     z-index: 100;
 }
 header a{
@@ -36,10 +46,9 @@ header a{
     border-radius: 20px;
 }
 header a:hover {
-    font-weight: 700;
-    font-stretch: condensed;
+    font-weight: 600;
     transition: .3s;
-    box-shadow: 0px 0px 15px #ffa500;
+    box-shadow: 0px 0px 30px #ffa500;
 
 }
 /* carousel */
@@ -123,7 +132,7 @@ header a:hover {
 }
 .thumbnail .item{
     width: 150px;
-    height: 220px;
+    height: 240px;
     flex-shrink: 0;
     position: relative;
 }
@@ -341,21 +350,14 @@ header a:hover {
   
 }
 .layer {
-    background: linear-gradient( to right, #00006691, #0000007a);
+    background: linear-gradient( to right, #000066d0, #00000052);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
 }
-.layer2 {
-    background: linear-gradient(5deg, #01001b, #000950a8);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
+
 .layers {
     background: transparent;
     height: 100%;
@@ -368,9 +370,9 @@ header a:hover {
     
 }
 .item:hover {
-    box-shadow: 0px 20px 20px #ffa500;
+    box-shadow: 0px 0px 20px blue;
     border-radius: 20px;
-    transition: .5s;
+    transition: .1s;
 
 
 }
@@ -414,7 +416,7 @@ header a:hover {
 }
 .training-content {
     max-width: 100%;
-    margin: auto;
+    margin-top: 1%;
     max-height: 200px;
     text-align: center;
     padding-top: 50px;
@@ -422,6 +424,7 @@ header a:hover {
 h1 {
     font-size: 36px;
     font-weight: 600;
+    margin-top: 7%;
 }
 p {
     display: flex;
@@ -434,7 +437,7 @@ p {
 }
 #slider {
     position: relative;
-    width: 60%;
+    width: 50%;
     height: 70vh;
     margin: 20px auto;
     transform-style: preserve-3d;
@@ -529,6 +532,7 @@ input [type="radio"]:checked {
 
 }
 .overview h1 {
+    margin-top: 8%;
     font-size: 36px;
     font-weight: 600;
     
@@ -670,8 +674,9 @@ input [type="radio"]:checked {
     left: 0;
     right: 0;
     top: -10px;
-    bottom: -10px;
+    bottom: -1px;
 }
+
 @media (max-width: 1023px) {
     .slider-wrapper .slide-button {
         margin-left: 0;
@@ -710,4 +715,31 @@ input [type="radio"]:checked {
         
     }
 
+}
+
+section:nth-child(2) {
+    margin-left: 500px;
+}
+section:nth-child(3) {
+    margin-right: 500px;
+}
+section:nth-child(4) {
+    margin-left: 500px;
+}
+.content {
+    
+    width: 95%;
+    margin: auto;
+    text-align: center;
+
+}
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2.3s ease;
+}
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
