@@ -5,8 +5,8 @@ a{
     text-decoration: none;
 }
 :root {
-    --main-color: #ffa500;
-    --bg: #000013;
+    --main-color: #eeff00;
+    --bg: linear-gradient(85deg, #00008b, #ffa500);
     --border:.1rem solid rgba(255, 255, 255, 0.705);
 }
 
@@ -58,9 +58,8 @@ section {
 
 .nav {
     display: flex;
-    background: linear-gradient(60deg, #00008b,#ffa500);
     justify-content: space-between;
-    padding: 0% 8% 0% 9%;
+    padding: 0% 10% 0% 10%;
     align-items: center;
     text-decoration: none;
     list-style: none;
@@ -80,6 +79,8 @@ header{
     align-items: center;
     position: sticky;
     z-index: 100;
+    padding: 10px 0% 10px 0%;
+    background: linear-gradient(60deg, #00008b,#ffa500);
 }
 header a{
     color: #eee;
@@ -97,16 +98,18 @@ header a:hover {
 }
 /* new added */
 .content {
-    max-width: 50rem;
+    max-width: 55rem;
 }
 .content h3 {
+
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
 }
 .content p {
-    font-size: 2rem;
-    font-weight: lighter;
+   
+    font-size: 5rem;
+    font-weight: 400;
     line-height: 1.8;
     padding: 1rem 0;
     color: #eee;
@@ -614,7 +617,6 @@ input [type="radio"]:checked {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 .overview {
-    background: #01000e;
     width: 100%;
     margin-top: 3%;
     align-items: center;
@@ -797,7 +799,7 @@ section:nth-child(4) {
 }
 
 .footer {
-    background: linear-gradient(60deg, #ffa500, #00008b);
+    background: #00008b;
     text-align: center;
 }
 
