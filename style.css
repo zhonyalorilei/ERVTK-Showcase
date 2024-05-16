@@ -627,64 +627,52 @@ input [type="radio"]:checked {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 .overview {
-    width: 100%;
-    margin-top: 3%;
+    width: 60%;
     align-items: center;
     justify-content: center;
-
-}
-.overview h1 {
-    margin-top: 8%;
-    font-size: 36px;
-    font-weight: 600;
-    
-}
-.overview p {
-    padding-bottom: 30px;
-    display: flex;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    width: 100%;
-    justify-content: space-between;
-    margin: auto;
-  
+    padding-bottom: 10%;
 
 }
 
 .video-item video {
-    width: 235px; /* Set width of the video */
+    width: 100%; /* Set width of the video */
     border: 2px solid rgb(122, 120, 120); /* Add border to the video */
     transition: transform 0.3s ease; /* Add smooth transition for scaling */
     border-radius: 10px;
     object-fit: cover;
 }
 .video-item {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    width: 100%;
-    height: 100%;
+    flex: 1 1 180px; /* Flex-grow, flex-shrink, and base width */
+    max-width: 250px; /* Ensure video items don't get too wide */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .video-item video:hover {
     border: 3px solid #fffefd;
     border-radius: 10px;
     transform: scale(1.08);
-    
 }
 
 /*----------------New--------------*/
 
 .video-container {
-    width: 100%;
-    height: 100%;  
+    position: relative;
+    gap: 10px; /* Space between items */
+    justify-content: center; /* Center the items */
+    padding: 10px; /* Padding around the container */
+    width: 200%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
+
 .slider-wrapper .slide-button {
     position: absolute;
     height: 50px;
     width: 50px;
-    margin-top: 15%;
+    top: 105%;
     color: rgb(255, 255, 255);
     border: none;
     outline: none;
@@ -694,35 +682,35 @@ input [type="radio"]:checked {
     border-radius: 50%;
     font-family: monospace;
     transform: translateY(-50%);
-    
-    
-}.slider-wrapper .slide-button:hover {
-    background: white;
-    color: #000;
+}
+.slider-wrapper .slide-button:hover {
+    background: rgb(0, 4, 245);
+    color: #fffffc;
     transition: .5s;
 }
 
 .slider-wrapper .slide-button#prev-slide {
-    left: 8%;
+    left: 45%;
     display: none;
 }
 .slider-wrapper .slide-button#next-slide {
-    right: 8%;
+    right: 45%;
 }
-.card {
-    width: 100%;
-    margin: 0;
-}
+
 .slider-wrapper .image-list {
     display: grid;
-    gap: 6px;
+    gap: 9px;
+    height: 70vh;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
     font-size: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     overflow-x: auto;
     grid-template-columns: repeat(10, 1fr);
 }
 .slider-wrapper .image-list .video-item {
-    width: 250px;
+    width: 350px;
     height: 400px;
     object-fit: cover;
 }
@@ -737,11 +725,11 @@ input [type="radio"]:checked {
 .video-container .slider-scrollbar {
     height: 24px;
     width: 100%;
-  
     display: flex;
     align-items: center;
 
 }
+
 .slider-scrollbar .scrollbar-track {
     height: 2px;
     width: 100%;
@@ -1175,6 +1163,22 @@ section:nth-child(4) {
     .about .row {
         display: flex;
         justify-content: center;
+    }
+    .overview {
+        width: 50%;
+        display: block;
+        margin: .5rem;
+        top: 0;
+        padding: .5rem;
+        font-size: 1.7rem;
+        margin-bottom: 15%;
+    }
+    .slider-wrapper .slide-button#prev-slide {
+        left: 39%;
+        display: none;
+    }
+    .slider-wrapper .slide-button#next-slide {
+        right: 39%;
     }
 
 }
