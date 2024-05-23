@@ -1,0 +1,1 @@
+Line follower Classic is an autonomous robot which follows either a black line on a white surface or a white line on a black surface. The robot must be able to detect the particular line and keep following it. The line is simple, it does not have interruptions, sharp corners or bifurcations. There is not age limit for Line Follower Classic.
